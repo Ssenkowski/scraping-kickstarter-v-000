@@ -11,7 +11,7 @@ def create_project_hash
   # The title is '# title: project.css("h2.bbcard_name strong a").text'
   # The image link is '# image link: project.css("div.project-thumbnail a img").attribute("src").value'
   # The description is 'project.css("p.bbcard_blurb").text'
-
+  # The course location is 'project.css("span.location-name").text'
 end
 
 create_project_hash
