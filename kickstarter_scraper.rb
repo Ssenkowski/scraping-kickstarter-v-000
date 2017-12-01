@@ -8,7 +8,6 @@ require 'pry'
 # The course location is 'project.css("span.location-name").text'
 # The amount funded is 'project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i'
 def create_project_hash
-
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
 
@@ -27,4 +26,3 @@ def create_project_hash
   projects
 end
 
-create_project_hash
